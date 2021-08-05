@@ -3,19 +3,16 @@ import './Table.css'
 
 function Table(props) {
     return (
-        
-        <tr>
-            <td>{props.name}</td>
-            <td> {props.email} </td>
-            <td> {props.age} </td>
-            <td> {props.gender} </td>
-            <td> {props.hobbies} </td>
-            <td>
-                <button>Edit</button>
-                <button>Delete</button>
-            </td>
-        </tr>
-        
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Hobbies</th>
+                <th>Action(Edit/Delete)</th>
+            </tr>
+        </thead>
     )
 }
 
